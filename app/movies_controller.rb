@@ -30,6 +30,7 @@ def can_be_created_in_a_block(args = attributes)
 
   Movie.create do |m|
     m.attributes
+    binding.pry
   end
 end
 
