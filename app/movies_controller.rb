@@ -34,7 +34,7 @@ def can_be_created_in_a_block(args = attributes)
 end
 
 def can_get_the_first_item_in_the_database
-  Movie.title.first
+  Movie.first.title
 end
 
 def can_get_the_last_item_in_the_database
@@ -45,8 +45,8 @@ def can_get_size_of_the_database
   Movie.all.size
 end
 
-def can_find_the_first_item_from_the_database_using_id(id)
-  Movie.find_by(id).title
+def can_find_the_first_item_from_the_database_using_id
+  Movie.find_by().title
 end
 
 def can_find_by_multiple_attributes
